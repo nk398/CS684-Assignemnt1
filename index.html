@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS684 Assignment 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: black;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .Main{
+            width: 100%;
+            min-height: 100vh;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+        .menu-bar{
+            background: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .menu-bar ul{
+            display: inline-flex;
+            list-style: none;
+            color:#ffffff;
+        }
+        .menu-bar ul li{
+            width:120px;
+            margin: 15px;
+            padding: 15px;
+
+        }
+        .menu-bar ul li a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .active, .menu-bar ul li:hover{
+            background: #0E3CBB ;
+            border-radius: 3px;
+
+        }
+        h1 {
+            color: #ffffff;
+        }
+        h3 {
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+        }
+        </style>
+</head>
+<body>
+    <div class="Main">
+    <div class="menu-bar">
+        <ul>
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="team.html">Team</a>
+            </li>
+            <li>
+                <a href="rest_api">Rest API</a>
+            </li>
+        </ul>
+    </div>
+    <h1>Welcome</h1>
+    <br>
+    <h3>This is a webpage for CS 684 Assignment 1</h3>
+    <br>
+    <p>
+        The Goal of this assignment is to create a webpage that displays the output of the given REST endpoint and also returns the team's name.
+    </p>
+    </div>
+</body>
+</html>
