@@ -1,1 +1,1 @@
-# CS684-Assignemnt1
+# CS684-Assignment1
