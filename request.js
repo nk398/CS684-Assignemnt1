@@ -10,8 +10,8 @@ $(document).ready(function() {
         $.ajax({
                 url:'https://jsonplaceholder.typicode.com/user',
                 type:"GET",
-                success:function (result) {
-                        console.log(result)
+                success:function (index) {
+                        console.log(index)
                 },
                 error:function(err) {
                         console.log(err);
