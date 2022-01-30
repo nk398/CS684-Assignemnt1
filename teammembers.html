@@ -1,85 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Avengers Team</title>
-    <link rel="stylesheet" href="team.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <meta charset="UTF-8">
+  <title>CS684 Assignment 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+  <script src="https;//cdnjs.cloudflare.com/ajax/libs/jquery.min.js"></script>
+  <script src="request.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: black;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .Main{
+      width: 100%;
+      min-height: 100vh;
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+    .menu-bar{
+      background: rgb(0, 0, 0);
+      text-align: center;
+    }
+    .menu-bar ul{
+      display: inline-flex;
+      list-style: none;
+      color:#ffffff;
+    }
+    .menu-bar ul li{
+      width:120px;
+      margin: 15px;
+      padding: 15px;
+
+    }
+    .menu-bar ul li a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .active, .menu-bar ul li:hover{
+      background: #0E3CBB ;
+      border-radius: 3px;
+
+    }
+    h1 {
+      color: #ffffff;
+    }
+    h3 {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
-<div class="hero">
+<div class="Main">
+  <div class="menu-bar">
+    <ul>
+      <li class="active">
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </div>
+  <h1>Team Members</h1>
+  <br>
+  <h3>Neha Kazi</h3>
+  <br>
+  <h3>Nikita Ramesh Gaikwad</h3>
+  <br>
+  <h3>Pallavi Adusumalli</h3>
 
-    <div class="menu-bar">
-        <ul>
-            <li class="active" ><a href="index.html"> Home </a></li>
-            <li class="active" >  Meet our Avengers</li>
-
-        </ul>
-    </div>
-    <div class="overlay"></div>
-
-    <div class="row">
-        <div class="col-1">
-            <div> <header style="font-size: 30px">Neha</header></div>
-             <div><header style="font-size: 30px" id="btn1"></header></div>
-            <div > <header style="font-size: 30px" id="btn2"> </header></div>
-            <ul>
-                <li class="btn active"></li>
-                <li class="btn"></li>
-                <li class="btn"></li>
-
-            </ul>
-
-        </div>
-        <div class="col-2" >
-        <img src="images/neha.jpeg" id="banner">
-
-        </div>
-    </div>
-
-</div >
-
-<script>
-    var btn = document.getElementsByClassName("btn");
-    var banner = document.getElementById("banner");
-
-    btn[0].onclick = function(){
-        banner.src = "/images/neha.jpeg";
-        animation();
-        this.classList.add("active");
-        document.getElementsByClassName("btn0").innerText = 'Neha Kazi';
-
-    }
-
-    btn[1].onclick = function(){
-        banner.src = "/images/nikita.jpeg";
-        animation();
-        this.classList.add("active");
-        document.getElementById("btn1").innerText = 'Nikita Ramesh Gaikwad';
-
-    }
-
-    btn[2].onclick = function(){
-        banner.src = "/images/pallavi.jpeg";
-        animation();
-        this.classList.add("active");
-        document.getElementById("btn2").textContent = 'Pallavi Adusumalli';
-    }
-
-    function animation(){
-        banner.classList.add("zoom");
-        setTimeout(function(){
-            banner.classList.remove("zoom");
-        },500);
-
-        for(b of btn){
-            b.classList.remove("active");
-        }
-
-    }
-
-
-
-</script>
-
+</div>
 </body>
-
 </html>
