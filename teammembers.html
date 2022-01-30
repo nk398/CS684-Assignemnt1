@@ -9,7 +9,8 @@
 
     <div class="menu-bar">
         <ul>
-            <li class="active"> Avengers</li>
+            <li class="active" ><a href="index.html"> Home </a></li>
+            <li class="active" >  Meet our Avengers</li>
 
         </ul>
     </div>
@@ -35,6 +36,7 @@
     </div>
 
 </div >
+
 <script>
     var btn = document.getElementsByClassName("btn");
     var banner = document.getElementById("banner");
@@ -43,8 +45,7 @@
         banner.src = "/images/neha.jpeg";
         animation();
         this.classList.add("active");
-
-        document.getElementsByClassName("btn0").innerText = 'Neha';
+        document.getElementsByClassName("btn0").innerText = 'Neha Kazi';
 
     }
 
@@ -52,7 +53,7 @@
         banner.src = "/images/nikita.jpeg";
         animation();
         this.classList.add("active");
-        document.getElementById("btn1").innerText = 'Nikita';
+        document.getElementById("btn1").innerText = 'Nikita Ramesh Gaikwad';
 
     }
 
@@ -60,7 +61,7 @@
         banner.src = "/images/pallavi.jpeg";
         animation();
         this.classList.add("active");
-        document.getElementById("btn2").textContent = 'Pallavi';
+        document.getElementById("btn2").textContent = 'Pallavi Adusumalli';
     }
 
     function animation(){
@@ -75,7 +76,7 @@
 
     }
 
- 
+
 
 </script>
 
