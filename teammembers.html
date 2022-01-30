@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>History of Network</title>
+    <title>Avengers Team</title>
     <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
@@ -11,49 +11,58 @@
         <ul>
             <li class="active"> Avengers</li>
 
-
         </ul>
     </div>
     <div class="overlay"></div>
 
     <div class="row">
         <div class="col-1">
-
-
+            <div> <header style="font-size: 30px">Neha</header></div>
+             <div><header style="font-size: 30px" id="btn1"></header></div>
+            <div > <header style="font-size: 30px" id="btn2"> </header></div>
             <ul>
                 <li class="btn active"></li>
                 <li class="btn"></li>
                 <li class="btn"></li>
+
             </ul>
 
         </div>
-        <div class="col-2">
-            <img src="/images/neha.jpeg" id="banner">
+        <div class="col-2" >
+        <img src="images/neha.jpeg" id="banner">
+
         </div>
     </div>
+
 </div >
 <script>
     var btn = document.getElementsByClassName("btn");
     var banner = document.getElementById("banner");
 
     btn[0].onclick = function(){
-        banner.src = "/images.neha.jpeg";
+        banner.src = "/images/neha.jpeg";
         animation();
         this.classList.add("active");
+
+        document.getElementsByClassName("btn0").innerText = 'Neha';
+
     }
 
     btn[1].onclick = function(){
         banner.src = "/images/nikita.jpeg";
         animation();
         this.classList.add("active");
+        document.getElementById("btn1").innerText = 'Nikita';
+
     }
 
     btn[2].onclick = function(){
         banner.src = "/images/pallavi.jpeg";
         animation();
         this.classList.add("active");
+        document.getElementById("btn2").textContent = 'Pallavi';
     }
-    
+
     function animation(){
         banner.classList.add("zoom");
         setTimeout(function(){
@@ -63,6 +72,7 @@
         for(b of btn){
             b.classList.remove("active");
         }
+
     }
 
 
