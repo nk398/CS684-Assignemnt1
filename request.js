@@ -1,20 +1,11 @@
-axios.get('https://jsonplaceholder.typicode.com/user')
-    .then(response => {
-
-        }, err=> {
-
-        }
-        )
-
-$(document).ready(function() {
-        $.ajax({
-                url:'https://jsonplaceholder.typicode.com/user',
-                type:"GET",
-                success:function (index) {
-                        console.log(index)
-                },
-                error:function(err) {
-                        console.log(err);
-                }
-            })
-})
+<script src={window.location.href='index.html'}>{
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "" || x == null || x != "Avengers") {
+            alert("Valid team name must be filled out");
+            return false;
+        }else
+            return window.location.href="teammembers.html";
+    }
+}
+</script>
